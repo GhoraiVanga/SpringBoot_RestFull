@@ -62,6 +62,14 @@ public class UserEntity implements Serializable {
 	   private String email;
 	   @Column(nullable = false)
 	   private String password;
+	   public String getEncriptedPassword() {
+		return encriptedPassword;
+	}
+	public void setEncriptedPassword(String encriptedPassword) {
+		this.encriptedPassword = encriptedPassword;
+	}
+	@Column(nullable = false)
+	   private String encriptedPassword;
 	 
 	
 	
